@@ -1,193 +1,174 @@
 //Global Values
 
-var changers_val=0;
-var dis=document.getElementById("dis");
-var ddis=document.getElementsByClassName("ddis")[0];
+var changers_val = 0;
+var dis = document.getElementById("dis");
+var ddis = document.getElementsByClassName("ddis")[0];
 
-async function init()
-{
-    window.location.href="#home";
+async function init() {
+    window.location.href = "#home";
     basic.inisetup();
     basic.contact();
     menu.disapper();
-    if(screen.width>400)
-    {
-        var infos=document.getElementsByClassName("info");
+    if (screen.width > 400) {
+        var infos = document.getElementsByClassName("info");
         basic.setupinfos(infos);
     }
     await menu.appear("Home");
 }
-var data=
-[
-    {
-        "head":"Analog Clock",
-        "img":"clock.png",
-        "p":`HTML analog <a href='https://clockbycne.web.app/'>Clock</a>.`,
-        "pp":"Beautiful analog clock.",
-        "vlink":"https://instagram.fcok3-1.fna.fbcdn.net/v/t50.2886-16/104995672_2683878871845783_1411281415315535017_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5jYXJvdXNlbF9pdGVtLmRlZmF1bHQiLCJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSJ9&_nc_ht=instagram.fcok3-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=LRQfO_ZWpOMAX9Hocuj&vs=17879808157633252_1023283486&_nc_vs=HBksFQAYJEdGZ2JRZ2FYeThZX19ZZ0pBS2swLWszNDRKVVRia1lMQUFBRhUAAsgBABUAGCRHRHZxUWdhNF80U2x2dkFBQU9nM29EYXBZVklKYmtZTEFBQUYVAgLIAQAoABgAGwAVAAAmyMyBueflwj8VAigCQzMsF0Ax3bItDlYEGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXuBwA%3D&_nc_rid=69432ddbd0&oe=5FCD6709&oh=5355366daa27c4e72b321d19c18eac8c",
-        "imgs":
-        {
-            "length":0
+var data = [{
+        "head": "Analog Clock",
+        "img": "clock.png",
+        "p": `HTML analog <a href='https://clockbycne.web.app/'>Clock</a>.`,
+        "pp": "Beautiful analog clock.",
+        "vlink": "https://instagram.fcok3-1.fna.fbcdn.net/v/t50.2886-16/104995672_2683878871845783_1411281415315535017_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5jYXJvdXNlbF9pdGVtLmRlZmF1bHQiLCJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSJ9&_nc_ht=instagram.fcok3-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=LRQfO_ZWpOMAX9Hocuj&vs=17879808157633252_1023283486&_nc_vs=HBksFQAYJEdGZ2JRZ2FYeThZX19ZZ0pBS2swLWszNDRKVVRia1lMQUFBRhUAAsgBABUAGCRHRHZxUWdhNF80U2x2dkFBQU9nM29EYXBZVklKYmtZTEFBQUYVAgLIAQAoABgAGwAVAAAmyMyBueflwj8VAigCQzMsF0Ax3bItDlYEGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXuBwA%3D&_nc_rid=69432ddbd0&oe=5FCD6709&oh=5355366daa27c4e72b321d19c18eac8c",
+        "imgs": {
+            "length": 0
         }
     },
     {
-        "head":"Bingo - Multiplayer",
-        "img":"bingo.png",
-        "p":`Web Multiplayer Bingo. Uses firebase database to sync values.
+        "head": "Bingo - Multiplayer",
+        "img": "bingo.png",
+        "p": `Web Multiplayer Bingo. Uses firebase database to sync values.
                 Link to play tha game <a href='https://bingobycne.web.app/'>Bingo.</a>`,
-        "pp":"Firebase backend",
-        "vlink":"https://instagram.fcok3-1.fna.fbcdn.net/v/t50.2886-16/121820074_124611995816025_1361632516521714132_n.mp4?_nc_ht=instagram.fcok3-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=ccBSOYKHvOcAX-wNUrH&oe=5FCD8964&oh=c78099c45f4b697193328d0d0d57a293",
-        "imgs":
-        {
-            "length":0
+        "pp": "Firebase backend",
+        "vlink": "https://instagram.fcok3-1.fna.fbcdn.net/v/t50.2886-16/121820074_124611995816025_1361632516521714132_n.mp4?_nc_ht=instagram.fcok3-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=ccBSOYKHvOcAX-wNUrH&oe=5FCD8964&oh=c78099c45f4b697193328d0d0d57a293",
+        "imgs": {
+            "length": 0
         }
     },
     {
-        "head":"TicTacToe - Multiplayer",
-        "img":"tictactoe.png",
-        "p":`Web Multiplayer TicTacToe. Uses firebase database to sync values. 
+        "head": "TicTacToe - Multiplayer",
+        "img": "tictactoe.png",
+        "p": `Web Multiplayer TicTacToe. Uses firebase database to sync values. 
                 Link to play tha game <a href='https://tictactoebycne.web.app/'>Tictactoe</a>.`,
-        "pp":"Firebase backend.",
-        "vlink":"",
-        "imgs":
-        {
-            "length":0,
-            "img0":"me.jpg",
-            "img1":"bingo.png",
-            "img2":"clock.png"
+        "pp": "Firebase backend.",
+        "vlink": "",
+        "imgs": {
+            "length": 0,
+            "img0": "me.jpg",
+            "img1": "bingo.png",
+            "img2": "clock.png"
         }
     }
 ]
-var contactdata=[
-    {
+var contactdata = [{
         //<div class="cele"><div class="cn __instagram">I</div></div>
-        "div":"__mail",
-        "font_aws":`<i class="fab fa-envelope fa"></i>`,
-        "link":"mailto:gaganlal7171@gmail.com"
+        "div": "__mail",
+        "font_aws": `<i class="fab fa-envelope fa"></i>`,
+        "link": "mailto:gaganlal7171@gmail.com"
     },
     {
         //<div class="cele"><div class="cn __instagram">I</div></div>
-        "div":"__instagram",
-        "font_aws":`<i class="fab fa-instagram fa"></i>`,
-        "link":"https://www.instagram.com/codingneverends/"
+        "div": "__instagram",
+        "font_aws": `<i class="fab fa-instagram fa"></i>`,
+        "link": "https://www.instagram.com/codingneverends/"
     },
     {
         //<div class="cele"><div class="cn __instagram">I</div></div>
-        "div":"__github",
-        "font_aws":`<i class="fab fa-github fa"></i>`,
-        "link":"https://github.com/codingneverends"
+        "div": "__github",
+        "font_aws": `<i class="fab fa-github fa"></i>`,
+        "link": "https://github.com/codingneverends"
     }
 ]
-var basic={
-    inisetup(){
-        var eles=document.getElementsByClassName("eles")[0];
-        eles.innerHTML="";
-        for(let i=0;i<data.length;i++)
-        eles.innerHTML+=
-        `<div class="ele ${i%2==0?"a":""}">
-            <div class="img">
-                <img src=${data[i].img} alt="image can't be displayed">
-            </div>
-            <div class="info" onclick='basic.show(${i})'>
-                <div class="infobox">
-                    <div class="infohead">
-                        ${data[i].head}
+var basic = {
+        inisetup() {
+            var eles = document.getElementsByClassName("eles")[0];
+            if (!eles) {
+                return;
+            }
+            eles.innerHTML = "";
+            for (let i = 0; i < data.length; i++)
+                eles.innerHTML +=
+                `<div class="ele ${i%2==0?"a":""}">
+                    <div class="img">
+                        <img src=${data[i].img} alt="image can't be displayed">
                     </div>
-                    <p>
-                        ${data[i].pp}
-                    </p>
-                </div>
-            </div>
-        </div>`;
-    },
-    async inject()
-    {
-        var ar=[];
-        var art=[];
-        var injectdata=[
-            `Hi,`,
-            `I am Gagan Lal.`,
-            `Learn to build web things.`,
-            `"Intrest is the most powerful weapon in the world.Which will help you to achive your goal."`
-        ];
-        for(var i=0;i<4;i++)
-        {
-            ar.push(document.getElementById("mv"+i));
-            ar[ar.length-1].innerHTML="...";
-            if(i==3)continue;
-            art.push(document.getElementById("mv"+i+"1"));
-            art.push(document.getElementById("mv"+i+"2"));
-            art.push(document.getElementById("mv"+i+"3"));
-            for(var j=1;j<4;j++)
-            {
-                art[art.length-j].innerHTML="...";
-            }
-        }
-        for(var i=0;i<4;i++)
-        {
-            ar[i].innerHTML="";
-            var temphtml="";
-            var ctime=0;
-            var curser=true;
-            for(var j=0;j<injectdata[i].length;j++)
-            {
-                if(i!=3)
-                {
-                    art[3*i].innerHTML=temphtml+injectdata[i][j];
-                    art[3*i+1].innerHTML=temphtml+injectdata[i][j];
-                    art[3*i+2].innerHTML=temphtml+injectdata[i][j];
-                }
-                ar[i].innerHTML=temphtml+injectdata[i][j];
-                temphtml=ar[i].innerHTML;
-                if(curser && j<injectdata[i].length-1)
-                {
-                    ar[i].innerHTML=temphtml+"|";
-                }
-                if(i!=3 && j<injectdata[i].length-1)
-                {
-                    art[3*i].innerHTML=temphtml+"|";
-                    art[3*i+1].innerHTML=temphtml+"|";
-                    art[3*i+2].innerHTML=temphtml+"|";
-                }
-                await this.timer(80-i*10);
-                ctime=ctime+80-i*10;
-                if(ctime> 100)
-                {
-                    ctime=0;
-                    curser=!curser;
+                    <div class="info" onclick='basic.show(${i})'>
+                        <div class="infobox">
+                            <div class="infohead">
+                                ${data[i].head}
+                            </div>
+                            <p>
+                                ${data[i].pp}
+                            </p>
+                        </div>
+                    </div>
+                </div>`;
+        },
+        async inject() {
+            var ar = [];
+            var art = [];
+            var injectdata = [
+                `Hi,`,
+                `I am Gagan Lal.`,
+                `Learn to build web things.`,
+                `"Intrest is the most powerful weapon in the world.Which will help you to achive your goal."`
+            ];
+            for (var i = 0; i < 4; i++) {
+                ar.push(document.getElementById("mv" + i));
+                ar[ar.length - 1].innerHTML = "...";
+                if (i == 3) continue;
+                art.push(document.getElementById("mv" + i + "1"));
+                art.push(document.getElementById("mv" + i + "2"));
+                art.push(document.getElementById("mv" + i + "3"));
+                for (var j = 1; j < 4; j++) {
+                    art[art.length - j].innerHTML = "...";
                 }
             }
-        }
-    },
-    dis_disapper(){
-        dis.style.opacity=0;
-        dis.children[1].innerHTML="";
-        dis.children[0].style.animation="";
-        dis.children[1].style.animation="";
-    },
-    setupinfos(infos)
-    {
-        for(var i=0;i<infos.length;i++)
-        {
-            this.setupinfo(infos[i]);
-        }
-    },
-    setupinfo(info)
-    {
-        info.style.marginTop=info.parentElement.offsetHeight/2+"px";
-    },
-    close()
-    {
-        var sbox=document.getElementsByClassName("sbox")[0];
-        sbox.style.zIndex=-1;
-    },
-    show(i)
-    {
-        //console.log(i);
-        var sbox=document.getElementsByClassName("sbox")[0];
-        sbox.style.zIndex=1;
-        sbox.innerHTML=
-        `<div class="ssbox" onclick='basic.close()'>
+            for (var i = 0; i < 4; i++) {
+                ar[i].innerHTML = "";
+                var temphtml = "";
+                var ctime = 0;
+                var curser = true;
+                for (var j = 0; j < injectdata[i].length; j++) {
+                    if (i != 3) {
+                        art[3 * i].innerHTML = temphtml + injectdata[i][j];
+                        art[3 * i + 1].innerHTML = temphtml + injectdata[i][j];
+                        art[3 * i + 2].innerHTML = temphtml + injectdata[i][j];
+                    }
+                    ar[i].innerHTML = temphtml + injectdata[i][j];
+                    temphtml = ar[i].innerHTML;
+                    if (curser && j < injectdata[i].length - 1) {
+                        ar[i].innerHTML = temphtml + "|";
+                    }
+                    if (i != 3 && j < injectdata[i].length - 1) {
+                        art[3 * i].innerHTML = temphtml + "|";
+                        art[3 * i + 1].innerHTML = temphtml + "|";
+                        art[3 * i + 2].innerHTML = temphtml + "|";
+                    }
+                    await this.timer(80 - i * 10);
+                    ctime = ctime + 80 - i * 10;
+                    if (ctime > 100) {
+                        ctime = 0;
+                        curser = !curser;
+                    }
+                }
+            }
+        },
+        dis_disapper() {
+            dis.style.opacity = 0;
+            dis.children[1].innerHTML = "";
+            dis.children[0].style.animation = "";
+            dis.children[1].style.animation = "";
+        },
+        setupinfos(infos) {
+            for (var i = 0; i < infos.length; i++) {
+                this.setupinfo(infos[i]);
+            }
+        },
+        setupinfo(info) {
+            info.style.marginTop = info.parentElement.offsetHeight / 2 + "px";
+        },
+        close() {
+            var sbox = document.getElementsByClassName("sbox")[0];
+            sbox.style.zIndex = -1;
+        },
+        show(i) {
+            //console.log(i);
+            var sbox = document.getElementsByClassName("sbox")[0];
+            sbox.style.zIndex = 1;
+            sbox.innerHTML =
+                `<div class="ssbox" onclick='basic.close()'>
         </div>
         <div class="box">
             <div class="ele m">
@@ -236,7 +217,7 @@ var basic={
             var cns=document.getElementsByClassName("cn");
             cns[cns.length-1].classList.add(contactdata[i].div);
         }
-        if(screen.width<700)
+        if(screen.width<700 && document.getElementById("line sp"))
         {
             document.getElementById("hl_con").style.zIndex=-20;
             document.getElementById("line sp").style.zIndex=-20;

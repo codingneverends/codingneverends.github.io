@@ -1,4 +1,4 @@
-*{
+* {
     background: black;
     color: white;
     font-family: monospace;
@@ -6,140 +6,166 @@
     padding: 0px;
     scroll-behavior: smooth;
 }
-*:hover{
+
+*:hover {
     outline: none;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 2px;
     height: 2px;
 }
-.cnehead{
+
+.cnehead {
     text-align: center;
     margin: 80px 0px;
     font-size: 8rem;
     color: aqua;
 }
-.cnehead:before{
+
+.cnehead:before {
     content: 'CodingNeverEnds';
     color: #000;
     position: absolute;
-    transform: translate(1px,1px);
+    transform: translate(1px, 1px);
 }
-.cen{
+
+.cen {
     width: 100%;
     padding: 60px 0px;
     font-family: monospace;
 }
-.about{
+
+.about {
     margin: 10px 120px;
 }
-.about .hi{
+
+.about .hi {
     font-size: 3.5rem;
     background: transparent;
     color: transparent;
 }
-.about .hi.a{
+
+.about .hi.a {
     position: absolute;
     color: black;
-    transform: translate(0px,0px);
+    transform: translate(0px, 0px);
 }
-.about .hi.a.l{
+
+.about .hi.a.l {
     position: absolute;
     color: aqua;
-    transform: translate(1px,1px);
+    transform: translate(1px, 1px);
 }
-.about .hi.a.r{
+
+.about .hi.a.r {
     position: absolute;
     color: aqua;
-    transform: translate(-1px,-1px);
+    transform: translate(-1px, -1px);
 }
-.about .hig{
+
+.about .hig {
     padding-top: 35px;
     font-size: 3rem;
     color: transparent;
     background: transparent;
 }
-.about .hig.a{
+
+.about .hig.a {
     position: absolute;
     color: black;
-    transform: translate(0px,0px);
+    transform: translate(0px, 0px);
 }
-.about .hig.a.l{
+
+.about .hig.a.l {
     position: absolute;
     color: aqua;
-    transform: translate(1px,1px);
+    transform: translate(1px, 1px);
 }
-.about .hig.a.r{
+
+.about .hig.a.r {
     position: absolute;
     color: aqua;
-    transform: translate(-1px,-1px);
+    transform: translate(-1px, -1px);
 }
-.about .himy{
+
+.about .himy {
     padding-top: 30px;
     font-size: 2rem;
     margin-bottom: 30px;
     background: transparent;
     color: transparent;
 }
-.about .himy.s{
+
+.about .himy.s {
     color: aqua;
 }
-.about .himy.a{
+
+.about .himy.a {
     position: absolute;
     color: black;
-    transform: translate(0px,0px);
+    transform: translate(0px, 0px);
 }
-.about .himy.a.l{
+
+.about .himy.a.l {
     position: absolute;
     color: aqua;
-    transform: translate(-0.9px,-0.9px);
+    transform: translate(-0.9px, -0.9px);
 }
-.about .himy.a.l{
+
+.about .himy.a.l {
     position: absolute;
     color: aqua;
-    transform: translate(0.9px,0.9px);
+    transform: translate(0.9px, 0.9px);
 }
-.about .himy.ab{
+
+.about .himy.ab {
     color: white;
     padding-left: 20px;
 }
-.about .quote{
+
+.about .quote {
     font-size: 1.2rem;
     background: transparent;
 }
-.dummyabt{
+
+.dummyabt {
     height: 250px;
     background: transparent;
     color: transparent;
 }
-.about .blocks{
+
+.about .blocks {
     display: flex;
     justify-content: center;
 }
-.line.sp{
+
+.line.sp {
     position: fixed;
     height: 4px;
     width: 4px;
     right: 10%;
     bottom: 10%;
     opacity: 0;
-    background: linear-gradient(0deg,transparent,aqua);
+    background: linear-gradient(0deg, transparent, aqua);
     /*animation: lin_sp 2s linear forwards;*/
 }
-@keyframes lin_sp{
-    0%{
+
+@keyframes lin_sp {
+    0% {
         width: 4px;
         right: 10%;
     }
-    50%{
+    50% {
         width: calc(90% - 4px);
     }
-    100%{
+    100% {
         width: 4px;
         right: calc(100% - 4px);
     }
 }
-.about .blocks .block{
+
+.about .blocks .block {
     padding: 15px;
     border-radius: 20px;
     width: 100px;
@@ -148,13 +174,15 @@
     margin: 10px;
     box-shadow: #444 0px 0px 2px;
 }
-.about .myimg{
+
+.about .myimg {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 80px 0px;
 }
-.about .myimg .img{
+
+.about .myimg .img {
     overflow: hidden;
     border-radius: 100%;
     padding: 4px;
@@ -163,42 +191,50 @@
     align-items: center;
     justify-content: center;
 }
-.about .myimg .img img{
+
+.about .myimg .img img {
     width: 300px;
     height: 300px;
     border-radius: 100%;
 }
-.heading{
+
+.heading {
     padding: 20px;
     padding-bottom: 0px;
     font-size: 3rem;
     color: transparent;
     background: transparent;
 }
-.heading.a{
+
+.heading.a {
     position: absolute;
     color: black;
-    transform: translate(0.8px,0.8px);
+    transform: translate(0.8px, 0.8px);
 }
-.heading.a.l{
+
+.heading.a.l {
     position: absolute;
     color: aqua;
-    transform: translate(1.6px,1.6px);
+    transform: translate(1.6px, 1.6px);
 }
-.ele{
+
+.ele {
     padding: 60px 10px;
     border-radius: 30px;
     overflow: hidden;
     display: flex;
     align-items: center;
 }
-.ele .vid,.ele .pic{
+
+.ele .vid,
+.ele .pic {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0px;
 }
-.ele .pic .picabs{
+
+.ele .pic .picabs {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -206,14 +242,16 @@
     overflow: hidden;
     background: #ffffff03;
 }
-.ele .pic .picabs img{
+
+.ele .pic .picabs img {
     position: absolute;
     background: #444;
     max-width: 100%;
     max-height: 100%;
     transition: 0.5s ease-in;
 }
-.ele .pic .picabs .pandn{
+
+.ele .pic .picabs .pandn {
     position: absolute;
     background: #00000008;
     font-size: 4rem;
@@ -223,29 +261,37 @@
     border-radius: 20px;
     cursor: pointer;
 }
-.ele .pic .picabs .pandn:hover{
+
+.ele .pic .picabs .pandn:hover {
     border-color: #ffffffaf;
     color: #ffffffaf;
 }
-.ele .pic .picabs .pandn.pre{
+
+.ele .pic .picabs .pandn.pre {
     left: 0px;
 }
-.ele .pic .picabs .pandn.next{
+
+.ele .pic .picabs .pandn.next {
     right: 0px;
 }
-.ele .vid video{
+
+.ele .vid video {
     max-width: 100%;
 }
-.ele.a{
+
+.ele.a {
     justify-content: end;
 }
-.ele .img img{
+
+.ele .img img {
     max-width: 70%;
 }
-.ele.a .img img{
+
+.ele.a .img img {
     margin-left: 30%;
 }
-.ele .info{
+
+.ele .info {
     position: absolute;
     right: 5%;
     transform: translateY(-50%);
@@ -256,34 +302,44 @@
     border-radius: 30px;
     border: 1px solid transparent;
 }
-.ele.a .info{
+
+.ele.a .info {
     left: 5%;
 }
-.ele .info{
+
+.ele .info {
     opacity: 0.8;
 }
-.ele .info:hover{
+
+.ele .info:hover {
     opacity: 1;
     border-color: aqua;
 }
-.ele .info .infobox .infohead,.details .infobox .infohead{
+
+.ele .info .infobox .infohead,
+.details .infobox .infohead {
     font-size: 1.5rem;
 }
-.details .infobox p{
+
+.details .infobox p {
     font-size: 1.2rem;
     color: white;
 }
-a{
+
+a {
     color: blue;
 }
-.ele.m{
+
+.ele.m {
     display: block;
 }
-.ele.m .img img{
+
+.ele.m .img img {
     max-width: 100%;
 }
-.sbox{
-    background: rgba(0,0,0,0.7);
+
+.sbox {
+    background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -292,12 +348,14 @@ a{
     justify-content: center;
     align-items: center;
 }
-.sbox .ssbox{
+
+.sbox .ssbox {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.sbox .box{
+
+.sbox .box {
     padding: 40px;
     border-radius: 30px;
     box-shadow: aqua 0px 0px 40px;
@@ -305,7 +363,8 @@ a{
     overflow: scroll;
     transform: scale(0.8);
 }
-.sbox .close{
+
+.sbox .close {
     position: absolute;
     padding: 20px;
     border: 2px solid grey;
@@ -315,24 +374,28 @@ a{
     font-size: 3rem;
     cursor: pointer;
 }
-.contact{
+
+.contact {
     position: fixed;
     bottom: 10%;
     left: 0px;
     overflow: visible;
     background: transparent;
 }
-.contact .cbox{
+
+.contact .cbox {
     /*transform: translateY(-50%);*/
     background: transparent;
 }
-.contact .cbox .cele{
+
+.contact .cbox .cele {
     width: 100px;
     padding: 20px;
     padding: 0px;
     background: transparent;
 }
-.contact .cbox .cele .cn{
+
+.contact .cbox .cele .cn {
     display: inline-block;
     padding: 15px;
     transition: all 0.5s linear;
@@ -341,40 +404,52 @@ a{
     margin: 2px;
     background: white;
 }
-.contact .cbox .cele .cn.__mail{
+
+.contact .cbox .cele .cn.__mail {
     border-color: red;
     background: red;
     border-left-color: transparent;
     color: white;
 }
-.contact .cbox .cele .cn.__instagram{
+
+.contact .cbox .cele .cn.__instagram {
     border-color: #f0f;
     background: #f0f;
     border-left-color: transparent;
     color: white;
 }
-.contact .cbox .cele:hover .cn{
+
+.contact .cbox .cele:hover .cn {
     padding-left: 60px;
 }
-.contact .cbox .cele .cn i,.contact .cbox .cele .cn i:before{
+
+.contact .cbox .cele .cn i,
+.contact .cbox .cele .cn i:before {
     color: white;
 }
-.contact .cbox .cele .cn.__github i,.contact .cbox .cele .cn.__github i:before{
+
+.contact .cbox .cele .cn.__github i,
+.contact .cbox .cele .cn.__github i:before {
     color: black;
     transform: scale(1.3);
 }
-.contact .cbox .cele .cn i,.contact .cbox .cele .cn i:before{
+
+.contact .cbox .cele .cn i,
+.contact .cbox .cele .cn i:before {
     background: transparent;
 }
-.heading.contact{
+
+.heading.contact {
     display: none;
 }
-.ddis{
+
+.ddis {
     position: fixed;
     right: 0%;
     bottom: 0%;
 }
-.ddis .layer{
+
+.ddis .layer {
     position: fixed;
     background: #0000000f;
     top: 0px;
@@ -382,7 +457,8 @@ a{
     width: 100%;
     height: 100%;
 }
-.dis{
+
+.dis {
     position: fixed;
     overflow: hidden;
     z-index: 10;
@@ -392,7 +468,9 @@ a{
     padding: 15px;
     cursor: pointer;
 }
-.dis span,.contact span{
+
+.dis span,
+.contact span {
     position: absolute;
     width: 4px;
     height: 4px;
@@ -402,143 +480,149 @@ a{
     animation: anim_dis 2s linear infinite;
     cursor: pointer;
 }
-.dis a{
+
+.dis a {
     width: 100%;
     height: 100%;
 }
-.contact span{
+
+.contact span {
     opacity: 0;
 }
-@keyframes fade_in{
-    0%{
+
+@keyframes fade_in {
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
-.i_link{
+
+.i_link {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
-@keyframes anim_con{
-    2%{
+
+@keyframes anim_con {
+    2% {
         width: 60%;
-        background: linear-gradient(90deg,transparent,aqua);
+        background: linear-gradient(90deg, transparent, aqua);
     }
-    14%{
+    14% {
         width: 4px;
         height: 4px;
         background: aqua;
         left: calc(60% - 4px);
     }
-    28%{
+    28% {
         height: 100%;
-        background: linear-gradient(transparent,aqua);
+        background: linear-gradient(transparent, aqua);
         top: 0px;
     }
-    43%{
+    43% {
         height: 4px;
         width: 4px;
         top: calc(100% - 4px);
         left: calc(60% - 4px);
         background: aqua;
     }
-    57%{
+    57% {
         width: 60%;
         left: 0px;
-        background: linear-gradient(-90deg,transparent,aqua);
+        background: linear-gradient(-90deg, transparent, aqua);
     }
-    71%{
+    71% {
         width: 4px;
         height: 4px;
         top: calc(100% - 4px);
         background: aqua;
     }
-    86%{
+    86% {
         height: 100%;
-        background: linear-gradient(0deg,transparent,aqua);
+        background: linear-gradient(0deg, transparent, aqua);
         top: 0px;
     }
-    100%{
+    100% {
         height: 4px;
         width: 4px;
         background: aqua;
     }
 }
-@keyframes anim_dis{
-    5%{
+
+@keyframes anim_dis {
+    5% {
         width: 100%;
-        background: linear-gradient(90deg,transparent,aqua);
+        background: linear-gradient(90deg, transparent, aqua);
     }
-    19%{
+    19% {
         width: 4px;
         height: 4px;
         background: aqua;
         left: calc(100% - 4px);
     }
-    33%{
+    33% {
         height: 100%;
-        background: linear-gradient(transparent,aqua);
+        background: linear-gradient(transparent, aqua);
         top: 0px;
     }
-    48%{
+    48% {
         height: 4px;
         width: 4px;
         top: calc(100% - 4px);
         left: calc(100% - 4px);
         background: aqua;
     }
-    62%{
+    62% {
         width: 100%;
         left: 0px;
-        background: linear-gradient(-90deg,transparent,aqua);
+        background: linear-gradient(-90deg, transparent, aqua);
     }
-    81%{
+    81% {
         width: 4px;
         height: 4px;
         top: calc(100% - 4px);
         background: aqua;
     }
-    91%{
+    91% {
         height: 100%;
-        background: linear-gradient(0deg,transparent,aqua);
+        background: linear-gradient(0deg, transparent, aqua);
         top: 0px;
     }
-    100%{
+    100% {
         height: 4px;
         width: 4px;
         background: aqua;
     }
 }
-@media only screen and (max-width:850px)
-{
-    .cnehead{
-        font-size:4rem;
+
+@media only screen and (max-width:850px) {
+    .cnehead {
+        font-size: 4rem;
     }
-    .about .blocks{
+    .about .blocks {
         display: block;
     }
-    .about .blocks .block{
+    .about .blocks .block {
         margin: auto;
         margin-bottom: 10px;
         margin-top: 10px;
     }
-    .about{
+    .about {
         margin: 10px 40px;
     }
 }
-@media only screen and (max-width:700px)
-{
-    .ele .img img{
+
+@media only screen and (max-width:700px) {
+    .ele .img img {
         max-width: 100%;
         margin: 0px;
     }
-    .ele{
+    .ele {
         display: block;
     }
-    .ele .info{
+    .ele .info {
         right: 0%;
         left: 0%;
         width: auto;
@@ -549,10 +633,10 @@ a{
     .ele.a .img img {
         margin-left: 0%;
     }
-    .contact{
+    .contact {
         position: relative;
     }
-    .contact .cbox{
+    .contact .cbox {
         transform: translateY(0%);
         display: flex;
         align-items: center;
@@ -560,73 +644,78 @@ a{
         background: transparent;
         padding: 60px 0px;
     }
-    .contact .cbox .cele{
+    .contact .cbox .cele {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .contact .cbox .cele .cn{
+    .contact .cbox .cele .cn {
         padding: 15px;
         border-radius: 10px;
     }
-    .contact .cbox .cele:hover .cn{
+    .contact .cbox .cele:hover .cn {
         padding-left: 20px;
     }
-    .contact .cbox .cele .cn.__mail{
+    .contact .cbox .cele .cn.__mail {
         border-color: red;
     }
-    .contact .cbox .cele .cn.__instagram{
+    .contact .cbox .cele .cn.__instagram {
         border-color: #f0f;
     }
-    .contact .cbox .cele .cn.__github{
+    .contact .cbox .cele .cn.__github {
         border-color: #fff;
     }
-    .heading.contact{
+    .heading.contact {
         display: block;
         padding: 20px;
-        transform: translate(1px,1px);
+        transform: translate(1px, 1px);
         color: aqua;
     }
-    .heading.contact:before{
+    .heading.contact:before {
         content: 'Contact';
         position: absolute;
         color: aqua;
-        transform: translate(-1px,-1px);
+        transform: translate(-1px, -1px);
     }
-    .heading.contact:after{
+    .heading.contact:after {
         content: 'Contact';
         position: absolute;
         color: black;
-        transform: translate(-100%,0px);
+        transform: translate(-100%, 0px);
     }
 }
-@media only screen and (max-width:400px)
-{
-    .cnehead{
-        font-size:3rem;
-    }
-    .heading{
-        font-size: 2rem;
-    }
-    .about{
-        margin: 10px 40px;
-    }
-    .about .hi{
+
+@media only screen and (max-width:400px) {
+    .cnehead {
         font-size: 3rem;
     }
-    .about .hig{
+    .heading {
+        font-size: 2rem;
+    }
+    .about {
+        margin: 10px 40px;
+    }
+    .about .hi {
+        font-size: 3rem;
+    }
+    .about .hig {
         font-size: 2.5rem;
     }
-    .about .himy{
+    .about .himy {
         font-size: 1.5rem;
     }
-    .about .myimg .img img{
+    .about .myimg .img img {
         width: 200px;
         height: 200px;
     }
-    
-    .ele .pic .picabs .pandn{
+    .ele .pic .picabs .pandn {
         font-size: 2rem;
         padding: 10px;
     }
+}
+
+.spla {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
 }
